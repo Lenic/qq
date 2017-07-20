@@ -1,11 +1,14 @@
 <template>
-  <div @click="clickHandler">Hello World</div>
+  <div @click="clickHandler">
+    <span>Hello World</span>
+    <span ref="aa">ddd</span>
+  </div>
 </template>
 <script>
 export default {
   methods: {
     clickHandler() {
-      alert(Date.now())
+      console.log(this.$refs.aa)
     }
   }
 }
