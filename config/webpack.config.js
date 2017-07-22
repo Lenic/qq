@@ -1,5 +1,6 @@
 var path = require('path');
-var HtmlWebpackPlugin = require('html-webpack-plugin')
+var HtmlWebpackPlugin = require('html-webpack-plugin');
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
   entry: {
@@ -29,10 +30,30 @@ module.exports = {
         test: /\.vue$/,
         exclude: /node_modules/,
         loader: 'vue-loader'
+      },
+      {
+        test: /\.attached\.less$/,
+        use: [
+          { loader: 'style-loader/useable' },
+          { loader: 'css-loader' },
+          { loader: 'less-loader' }
+        ]
+      },
+      {
+        test: /\.less$/,
+        exclude: /\.attached\.less$/,
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: [
+            { loader: 'css-loader' },
+            { loader: 'less-loader' }
+          ]
+        })
       }
     ]
   },
   plugins: [
+    new ExtractTextPlugin("style.css"),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, './index.html')
     })
