@@ -1,17 +1,20 @@
 <template>
   <div>
 
-    <header class="ddd">
+    <myHeader></myHeader>
 
-    </header>
+    <footer></footer>
 
   </div>
 </template>
 <script>
   import '../css/style.less';
+  import myHeader from '../header/header.vue';
 
   export default {
-
+      components:{
+        myHeader
+      }
   }
 
 </script>

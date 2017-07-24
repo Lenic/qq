@@ -49,6 +49,13 @@ module.exports = {
             { loader: 'less-loader' }
           ]
         })
+      },
+      {
+        test: /\.(png|jpg|gif|svg)$/,
+        loader: 'url-loader',
+        options: {
+          limit: 1000
+        }
       }
     ]
   },
