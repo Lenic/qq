@@ -64,5 +64,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, './index.html')
     })
-  ]
+  ],
+  devServer: {
+    host: '0.0.0.0',
+    port: 8080,
+    disableHostCheck: true
+  },
 }
