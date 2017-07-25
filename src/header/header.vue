@@ -5,7 +5,7 @@
         </div>
         <header class="home-top">
             <ul>
-                <li :class="{'home-li': home_nav.to === currentPath}" v-for="home_nav in toos">
+                <li :key="index" :class="{'home-li': `/${home_nav.to}` === $route.path}" v-for="(home_nav, index) in toos">
                     <router-link :to="home_nav.to || '/'">
                         {{home_nav.text}}
                     </router-link>
@@ -19,7 +19,7 @@
     import '../css/style.less';
 
     export default {
-        
+
         data() {
             return {
                 img: require('../images/huang.png'),
