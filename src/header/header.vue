@@ -21,10 +21,10 @@
             return {
                 img: require('../images/huang.png'),
                 toos: [
-                    { text: '导航一', to: 'index' },
-                    { text: '导航二', to: 'indexer' },
-                    { text: '导航三', to: 'indexsan' },
-                    { text: '导航四', to: 'indexsi' }
+                    { text: '我的家乡', to: 'index' },
+                    { text: '新疆生活', to: 'indexer' },
+                    { text: '北京闯荡', to: 'indexsan' },
+                    { text: '定居杭州', to: 'indexsi' }
                 ]
             }
         }
