@@ -10,7 +10,7 @@ import myContentsi from './index/contentsi.vue';
 Vue.use(VueRouter)
 
 const routes = [
-  { path: '/index', component: myContent },
+  { path: '/', component: myContent },
   { path: '/indexer', component: myContenter },
   { path: '/indexsan', component: myContentsan },
   { path: '/indexsi', component: myContentsi }
