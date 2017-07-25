@@ -10,40 +10,15 @@
                 <br/>
                 <span>{{item.name}}</span>
             </li>
-            <!-- <li>
-                <img :src="specialty"><br>
-                <span>凉皮</span>
-            </li>
-            <li>
-                <img :src="caitofu"><br>
-                <span>菜豆腐</span>
-            </li>
-            <li>
-                <img :src="caitofujiejie"><br>
-                <span>菜豆腐节节</span>
-            </li>
-            <li>
-                <img :src="hetaomo"><br>
-                <span>核桃馍</span>
-            </li>
-            <li>
-                <img :src="jiangshuimian"><br>
-                <span>浆水面</span>
-            </li>
-            <li>
-                <img :src="bantan"><br>
-                <span>浆水拌汤</span>
-            </li>
-            <li>
-                <img :src="guokuimo"><br>
-                <span>锅盔馍</span>
-            </li>
-            <li>
-                <img :src="youcha"><br>
-                <span>油茶</span>
-            </li> -->
         </ul>
         <h3>家乡野果欣赏介绍</h3>
+        <ul>
+            <li :key="index" v-for="(item,index) in wild_fruit">
+                <img :src="item.img" :alt="item.name" :title="八月瓜">
+                <br />
+                <span>{{item.name}}</span>
+            </li>
+        </ul>
         <div class="fei"></div>
     </div>
 </template>
@@ -86,10 +61,75 @@
                         name:'油茶'
                     }
                 ],
+                wild_fruit:[
+                    {
+                        img:require('../images/yeputao.png'),
+                        name:'野葡萄'
+                    },
+                    {
+                        img:require('../images/bayuegua.png'),
+                        name:'八月瓜'
+                    },
+                    {
+                        img:require('../images/piaoer.png'),
+                        name:'飘儿'
+                    },
+                    {
+                        img:require('../images/guaizhao.png'),
+                        name:'拐枣'
+                    },
+                    {
+                        img:require('../images/honguozi.png'),
+                        name:'红果子'
+                    },
+                    {
+                        img:require('../images/honpaoer.png'),
+                        name:'红泡儿'
+                    },
+                    {
+                        img:require('../images/zipaoer.png'),
+                        name:'紫泡儿'
+                    },
+                    {
+                        img:require('../images/masangguo.png'),
+                        name:'马桑果'
+                    },
+                    {
+                        img:require('../images/niunaizi.png'),
+                        name:'牛奶子'
+                    },
+                    {
+                        img:require('../images/qinglizi.png'),
+                        name:'青栗子'
+                    },
+                    {
+                        img:require('../images/wuweizi.png'),
+                        name:'五味子'
+                    },
+                    {
+                        img:require('../images/xuelizi.png'),
+                        name:'雪栗子'
+                    },
+                    {
+                        img:require('../images/yemali.png'),
+                        name:'野麻梨'
+                    },
+                    {
+                        img:require('../images/yeshiliu.png'),
+                        name:'野石榴'
+                    },
+                    {
+                        img:require('../images/chachaguo.png'),
+                        name:'叉叉果'
+                    },
+                    {
+                        img:require('../images/yeyingtao.png'),
+                        name:'野樱桃'
+                    },
+                ],
                 hometown_img : require('../images/lueyang.png'),
                 hometown_gimg : require('../images/cun.png'),
-                specialty : require('../images/liangpi.png'),
-
+                specialty : require('../images/liangpi.png')
             }
         }
     }
