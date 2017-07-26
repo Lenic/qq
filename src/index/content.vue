@@ -19,6 +19,15 @@
                 <span>{{item.name}}</span>
             </li>
         </ul>
+        <h3>家乡旅游介绍</h3>
+        <ul>
+            <li :key="index" v-for="(item,index) in leuyang_tourism">
+                <img :src="item.img" :alt="item.name" :title="item.name">
+                <br />
+                <span>{{item.name}}</span>
+            </li>
+        </ul>
+        
         <div class="fei"></div>
     </div>
 </template>
@@ -27,6 +36,9 @@
     export default {
         data() {
             return {
+                hometown_img : require('../images/lueyang.png'),
+                hometown_gimg : require('../images/cun.png'),
+                specialty : require('../images/liangpi.png'),
                 specialties: [
                     {
                         img: require('../images/liangpi.png'),
@@ -127,9 +139,41 @@
                         name:'野樱桃'
                     },
                 ],
-                hometown_img : require('../images/lueyang.png'),
-                hometown_gimg : require('../images/cun.png'),
-                specialty : require('../images/liangpi.png')
+                leuyang_tourism:[
+                    {
+                        img:require('../images/jiangshenmiao.png'),
+                        name:'江神庙'
+                    },
+                    {
+                        img:require('../images/lingyasi.png'),
+                        name:'灵崖寺'
+                    },
+                    {
+                        img:require('../images/wulongdon.png'),
+                        name:'五龙洞 '
+                    },
+                    {
+                        img:require('../images/yixiuyuan.png'),
+                        name:'怡休园 '
+                    },
+                    {
+                        img:require('../images/badugonyuan.png'),
+                        name:'八渡公园 '
+                    },
+                    {
+                        img:require('../images/xingxiutianyuan.png'),
+                        name:'兴秀田园 '
+                    },
+                    {
+                        img:require('../images/zhizhushan.png'),
+                        name:'蜘蛛山 '
+                    },
+                    {
+                        img:require('../images/xiangshuigou.png'),
+                        name:'响水沟 '
+                    }
+                ]
+                
             }
         }
     }
