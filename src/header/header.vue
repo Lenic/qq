@@ -5,7 +5,7 @@
         </div>
         <header class="home-top">
             <ul>
-                <li :key="index" :class="{'home-li': `/${home_nav.to}` === $route.path}" v-for="(home_nav, index) in toos">
+                <li :key="index" :class="{'home-li': `/${home_nav.to}` === $route.path, 'home-a': `/${home_nav.to}` !== $route.path}" v-for="(home_nav, index) in toos">
                     <router-link :to="home_nav.to || '/'">
                         {{home_nav.text}}
                     </router-link>
