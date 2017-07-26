@@ -21,10 +21,7 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: 'babel-loader',
-        options: {
-          presets: ['es2015', 'stage-0']
-        }
+        loader: 'babel-loader'
       },
       {
         test: /\.vue$/,
@@ -69,5 +66,5 @@ module.exports = {
     host: '0.0.0.0',
     port: 8081,
     disableHostCheck: true
-  },
+  }
 }
