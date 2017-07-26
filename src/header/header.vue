@@ -16,22 +16,22 @@
 </template>
 
 <script>
-    import '../css/style.less';
+import '../css/style.less';
 
-    export default {
+export default {
 
-        data() {
-            return {
-                img: require('../images/huang.png'),
-                currentPath: '',
-                toos: [
-                    { text: '我的家乡', to: '' },
-                    { text: '新疆生活', to: 'indexer' },
-                    { text: '北京闯荡', to: 'indexsan' },
-                    { text: '定居杭州', to: 'indexsi' }
-                ]
-            }
+    data() {
+        return {
+            img: require('../images/huang.png'),
+            currentPath: '',
+            toos: [
+                { text: '我的家乡', to: '' },
+                { text: '新疆生活', to: 'indexer' },
+                { text: '北京闯荡', to: 'indexsan' },
+                { text: '定居杭州', to: 'indexsi' }
+            ]
         }
     }
+}
 
 </script>

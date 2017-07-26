@@ -14,7 +14,7 @@
         <h3>家乡野果欣赏介绍</h3>
         <ul>
             <li :key="index" v-for="(item,index) in wild_fruit">
-                <img :src="item.img" :alt="item.name" :title="八月瓜">
+                <img :src="item.img" :alt="item.name" :title="item.name">
                 <br />
                 <span>{{item.name}}</span>
             </li>
