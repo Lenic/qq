@@ -5,7 +5,7 @@ import Contentsan from './contentsan';
 import Contentsi from './contentsi';
 
 module.exports = {
-  path: '/',
+  path: '/home',
   component: Main,
   children: [
     { path: '', component: Content },

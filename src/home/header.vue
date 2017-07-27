@@ -5,8 +5,8 @@
     </div>
     <header class="home-top">
       <ul>
-        <li :key="index" :class="{'home-li': `/${home_nav.to}` === $route.path, 'home-a': `/${home_nav.to}` !== $route.path}" v-for="(home_nav, index) in toos">
-          <router-link :to="home_nav.to || '/'">
+        <li :key="index" :class="{'home-li': home_nav.to === $route.path, 'home-a': home_nav.to !== $route.path}" v-for="(home_nav, index) in toos">
+          <router-link :to="home_nav.to">
             {{home_nav.text}}
           </router-link>
         </li>
@@ -22,10 +22,10 @@ export default {
       img: require('@res/images/huang.png'),
       currentPath: '',
       toos: [
-        { text: '我的家乡', to: '' },
-        { text: '新疆生活', to: 'indexer' },
-        { text: '北京闯荡', to: 'indexsan' },
-        { text: '定居杭州', to: 'indexsi' }
+        { text: '我的家乡', to: '/home' },
+        { text: '新疆生活', to: '/home/indexer' },
+        { text: '北京闯荡', to: '/home/indexsan' },
+        { text: '定居杭州', to: '/home/indexsi' }
       ]
     }
   }

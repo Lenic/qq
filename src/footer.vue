@@ -5,14 +5,14 @@
         <img :src="home">
         <br/>首页
       </router-link>
-      <router-link tag="li" to="strive">
+      <router-link tag="li" to="/strive">
         <img :src="struggle">
         <br/>奋斗之路
       </router-link>
-      <li>
+      <router-link tag="li" to="/life">
         <img :src="life">
         <br/>精彩生活
-      </li>
+      </router-link>
       <li>
         <img :src="archives">
         <br/>个人档案
