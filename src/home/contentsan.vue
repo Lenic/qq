@@ -36,7 +36,14 @@
       </li>
     </ul>
     <h3>我在国都去过的旅游地方</h3>
-  
+    <ul>
+      <li :key="index" v-for="(item,index) in alaer_zouguo">
+        <img :src="item.img" :alt="item.name" :title="item.name">
+        <br />
+        <span>{{item.name}}</span>
+      </li>
+    </ul>
+
     <div class="fei"></div>
   </div>
 </template>
@@ -53,6 +60,40 @@ export default {
       beijinjdt_img: require('@res/images/jiditie_2.jpg'),
       beijinlbt: require('@res/images/lubiantan.jpg'),
       beijinlbt_img: require('@res/images/lubiantan_1.jpg'),
+      alaer_zouguo:[
+        {
+          img : require('@res/images/huairoushanli.jpg'),
+          name : '北京怀柔山里冒险'
+        },
+        {
+          img : require('@res/images/tiananmen.jpg'),
+          name : '北京天安门'
+        },
+        {
+          img : require('@res/images/changcheng.jpg'),
+          name : '八达岭长城'
+        },
+        {
+          img : require('@res/images/lingshan.jpg'),
+          name : '北京灵山'
+        },
+        {
+          img : require('@res/images/kangxicaoyuang.jpg'),
+          name : '康熙草原'
+        },
+        {
+          img : require('@res/images/niaocao.jpg'),
+          name : '鸟巢水立方'
+        },
+        {
+          img : require('@res/images/yunhegon.jpg'),
+          name : '北京雍和宫'
+        },
+        {
+          img : require('@res/images/xiangshan.jpg'),
+          name : '北京香山'
+        }
+      ],
       alaer_beij : [
         {
           img : require('@res/images/beijinkaoya.jpg'),
