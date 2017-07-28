@@ -36,140 +36,140 @@
 export default {
   data() {
     return {
-      hometown_img: require('@res/images/lueyang.png'),
-      hometown_gimg: require('@res/images/cun.png'),
-      specialty: require('@res/images/liangpi.png'),
+      hometown_img: require('@res/images/lueyang.jpg'),
+      hometown_gimg: require('@res/images/cun.jpg'),
+      specialty: require('@res/images/liangpi.jpg'),
       specialties: [
         {
-          img: require('@res/images/liangpi.png'),
+          img: require('@res/images/liangpi.jpg'),
           name: '凉皮'
         },
         {
-          img: require('@res/images/caidoufu.png'),
+          img: require('@res/images/caidoufu.jpg'),
           name: '菜豆腐'
         },
         {
-          img: require('@res/images/caidoufujiejie.png'),
+          img: require('@res/images/caidoufujiejie.jpg'),
           name: '菜豆腐节节'
         },
         {
-          img: require('@res/images/hetaomo.png'),
+          img: require('@res/images/hetaomo.jpg'),
           name: '核桃馍'
         },
         {
-          img: require('@res/images/jiangshuimian.png'),
+          img: require('@res/images/jiangshuimian.jpg'),
           name: '浆水面'
         },
         {
-          img: require('@res/images/bantan.png'),
+          img: require('@res/images/bantan.jpg'),
           name: '浆水拌汤'
         },
         {
-          img: require('@res/images/guokuimo.png'),
+          img: require('@res/images/guokuimo.jpg'),
           name: '锅盔馍'
         },
         {
-          img: require('@res/images/youcha.png'),
+          img: require('@res/images/youcha.jpg'),
           name: '油茶'
         }
       ],
       wild_fruit: [
         {
-          img: require('@res/images/yeputao.png'),
+          img: require('@res/images/yeputao.jpg'),
           name: '野葡萄'
         },
         {
-          img: require('@res/images/bayuegua.png'),
+          img: require('@res/images/bayuegua.jpg'),
           name: '八月瓜'
         },
         {
-          img: require('@res/images/piaoer.png'),
+          img: require('@res/images/piaoer.jpg'),
           name: '飘儿'
         },
         {
-          img: require('@res/images/guaizhao.png'),
+          img: require('@res/images/guaizhao.jpg'),
           name: '拐枣'
         },
         {
-          img: require('@res/images/honguozi.png'),
+          img: require('@res/images/honguozi.jpg'),
           name: '红果子'
         },
         {
-          img: require('@res/images/honpaoer.png'),
+          img: require('@res/images/honpaoer.jpg'),
           name: '红泡儿'
         },
         {
-          img: require('@res/images/zipaoer.png'),
+          img: require('@res/images/zipaoer.jpg'),
           name: '紫泡儿'
         },
         {
-          img: require('@res/images/masangguo.png'),
+          img: require('@res/images/masangguo.jpg'),
           name: '马桑果'
         },
         {
-          img: require('@res/images/niunaizi.png'),
+          img: require('@res/images/niunaizi.jpg'),
           name: '牛奶子'
         },
         {
-          img: require('@res/images/qinglizi.png'),
+          img: require('@res/images/qinglizi.jpg'),
           name: '青栗子'
         },
         {
-          img: require('@res/images/wuweizi.png'),
+          img: require('@res/images/wuweizi.jpg'),
           name: '五味子'
         },
         {
-          img: require('@res/images/xuelizi.png'),
+          img: require('@res/images/xuelizi.jpg'),
           name: '雪栗子'
         },
         {
-          img: require('@res/images/yemali.png'),
+          img: require('@res/images/yemali.jpg'),
           name: '野麻梨'
         },
         {
-          img: require('@res/images/yeshiliu.png'),
+          img: require('@res/images/yeshiliu.jpg'),
           name: '野石榴'
         },
         {
-          img: require('@res/images/chachaguo.png'),
+          img: require('@res/images/chachaguo.jpg'),
           name: '叉叉果'
         },
         {
-          img: require('@res/images/yeyingtao.png'),
+          img: require('@res/images/yeyingtao.jpg'),
           name: '野樱桃'
         },
       ],
       leuyang_tourism: [
         {
-          img: require('@res/images/jiangshenmiao.png'),
+          img: require('@res/images/jiangshenmiao.jpg'),
           name: '江神庙'
         },
         {
-          img: require('@res/images/lingyasi.png'),
+          img: require('@res/images/lingyasi.jpg'),
           name: '灵崖寺'
         },
         {
-          img: require('@res/images/wulongdon.png'),
+          img: require('@res/images/wulongdon.jpg'),
           name: '五龙洞 '
         },
         {
-          img: require('@res/images/yixiuyuan.png'),
+          img: require('@res/images/yixiuyuan.jpg'),
           name: '怡休园 '
         },
         {
-          img: require('@res/images/badugonyuan.png'),
+          img: require('@res/images/badugonyuan.jpg'),
           name: '八渡公园 '
         },
         {
-          img: require('@res/images/xingxiutianyuan.png'),
+          img: require('@res/images/xingxiutianyuan.jpg'),
           name: '兴秀田园 '
         },
         {
-          img: require('@res/images/zhizhushan.png'),
+          img: require('@res/images/zhizhushan.jpg'),
           name: '蜘蛛山 '
         },
         {
-          img: require('@res/images/xiangshuigou.png'),
+          img: require('@res/images/xiangshuigou.jpg'),
           name: '响水沟 '
         }
       ]

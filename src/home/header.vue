@@ -19,7 +19,7 @@
 export default {
   data() {
     return {
-      img: require('@res/images/huang.png'),
+      img: require('@res/images/huang.jpg'),
       currentPath: '',
       toos: [
         { text: '我的家乡', to: '/home' },

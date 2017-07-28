@@ -29,56 +29,56 @@
 export default {
   data() {
     return {
-      alaer_img: require('@res/images/a_1.png'),
+      alaer_img: require('@res/images/a_1.jpg'),
       alaer_delicious_food: [
         {
-          img: require('@res/images/dapanji.png'),
+          img: require('@res/images/dapanji.jpg'),
           name: '大盘鸡'
         },
         {
-          img: require('@res/images/dapantu.png'),
+          img: require('@res/images/dapantu.jpg'),
           name: '大盘兔'
         },
         {
-          img: require('@res/images/kaoquanyang.png'),
+          img: require('@res/images/kaoquanyang.jpg'),
           name: '烤全羊'
         },
         {
-          img: require('@res/images/langmo.png'),
+          img: require('@res/images/langmo.jpg'),
           name: '狼馍'
         },
         {
-          img: require('@res/images/shouzhuafan.png'),
+          img: require('@res/images/shouzhuafan.jpg'),
           name: '手抓饭'
         },
         {
-          img: require('@res/images/yangrouchuan.png'),
+          img: require('@res/images/yangrouchuan.jpg'),
           name: '羊肉串'
         }
       ],
       alaer_tourism: [
         {
-          img: require('@res/images/shamozhilian.png'),
+          img: require('@res/images/shamozhilian.jpg'),
           name: '百里沙漠之恋'
         },
         {
-          img: require('@res/images/talimudaqiao.png'),
+          img: require('@res/images/talimudaqiao.jpg'),
           name: '春色塔里木大桥风景'
         },
         {
-          img: require('@res/images/huyanglin.png'),
+          img: require('@res/images/huyanglin.jpg'),
           name: '夕阳胡杨林'
         },
         {
-          img: require('@res/images/luweicao.png'),
+          img: require('@res/images/luweicao.jpg'),
           name: '塔里木河畔芦苇草地'
         },
         {
-          img: require('@res/images/huyanglinzhuang.png'),
+          img: require('@res/images/huyanglinzhuang.jpg'),
           name: '戈壁胡杨桩'
         },
         {
-          img: require('@res/images/mianhua.png'),
+          img: require('@res/images/mianhua.jpg'),
           name: '棉花海洋'
         }
       ]
