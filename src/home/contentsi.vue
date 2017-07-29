@@ -34,6 +34,7 @@
 export default {
   data() {
     return {
+      someData: null,
       hangzhou_img: require('@res/images/hangzhou.jpg'),
       gonzuo_b: require('@res/images/gonzuo_b.jpg'),
       gonzuo_h: require('@res/images/gongzuo_h.jpg'),
@@ -98,6 +99,12 @@ export default {
         }
       ]
     }
+  },
+  created:function() {   //请求后端接口
+    this.$http.get('http://rapapi.org/mockjsdata/17270/login/json').then((response)=>{
+        this.someData = response.body;
+        alert(response.body.name);
+      });  
   }
 }
 </script>
