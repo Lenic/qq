@@ -25,6 +25,10 @@ module.exports = {
         loader: 'babel-loader'
       },
       {
+        test: /\.json$/,
+        loader: 'json-loader'
+      },
+      {
         test: /\.vue$/,
         exclude: /node_modules/,
         loader: 'vue-loader'
@@ -64,6 +68,7 @@ module.exports = {
     })
   ],
   devServer: {
+    contentBase: path.join(__dirname, "res/images"),
     host: '0.0.0.0',
     port: 8081,
     disableHostCheck: true

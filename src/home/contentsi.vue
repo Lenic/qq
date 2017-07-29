@@ -37,7 +37,7 @@ export default {
       hangzhou_img: require('@res/images/hangzhou.jpg'),
       gonzuo_b: require('@res/images/gonzuo_b.jpg'),
       gonzuo_h: require('@res/images/gongzuo_h.jpg'),
-      alaer_hangte : [
+      alaer_hangte: [
         {
           img: require('@res/images/longjinxiaren.jpg'),
           name: '龙井虾仁'
